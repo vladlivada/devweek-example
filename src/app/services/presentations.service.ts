@@ -17,6 +17,7 @@ export class PresentationsService {
     }
 
     public savePresentation(presentation: Presentation): Observable<any> {
-        return of(true);
+        // return of(true);
+        return this.http.post('/api/presentation', presentation);
     }
 }

@@ -29,6 +29,7 @@ export class RegisterComponent implements OnInit {
         this.isLoading = true;
         this.presentationsService.savePresentation(this.presentation.value).subscribe(() => {
             this.isLoading = false;
+            this.presentation.reset();
         });
     }
 

@@ -7,7 +7,8 @@
 		"build": "ng build",
 		"test": "ng test",
 		"lint": "ng lint",
-		"cypress": "cypress open"
+		"cypress": "cypress open",
+		"cypress-headless": "cypress run --headless --browser chrome"
 	},
 	"private": true,
 	"dependencies": {
