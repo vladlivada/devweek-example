@@ -22,6 +22,6 @@ body {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-td.mat-cell {
-	min-width: 120px;
+td, th {
+	padding: 10px !important;
 }

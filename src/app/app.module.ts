@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatCommonModule } from '@angular/material/core';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -24,6 +25,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     imports: [
         BrowserModule,
         AppRoutingModule,
+        HttpClientModule,
         BrowserAnimationsModule,
         MatTableModule,
         MatInputModule,
