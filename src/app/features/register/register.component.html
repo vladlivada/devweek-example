@@ -1,0 +1,37 @@
+<div class="register-container">
+	<div class="container">
+		<h2>
+			Register your presentation
+		</h2>
+		<div class="form-container">
+			<form [formGroup]="presentation">
+				<mat-form-field class="col-12">
+					<mat-label>Title</mat-label>
+					<input matInput formControlName="title">
+				</mat-form-field>
+				<mat-form-field class="col-12">
+					<mat-label>Type</mat-label>
+					<input matInput formControlName="type">
+				</mat-form-field>
+				<mat-form-field class="col-12">
+					<mat-label>Duration</mat-label>
+					<input matInput formControlName="duration">
+				</mat-form-field>
+				<mat-form-field class="col-12">
+					<mat-label>Description</mat-label>
+					<textarea matInput formControlName="description"></textarea>
+				</mat-form-field>
+				<mat-form-field class="col-12">
+					<mat-label>Author</mat-label>
+					<input matInput formControlName="author">
+				</mat-form-field>
+				<mat-form-field class="col-12">
+					<mat-label>Reason</mat-label>
+					<textarea matInput formControlName="reason"></textarea>
+				</mat-form-field>
+			</form>
+		</div>
+		<button class="submit-btn" (click)="submitPresentation()" [disabled]="presentation.invalid || isLoading">Submit</button>
+		<mat-spinner *ngIf="isLoading" class="spinner"></mat-spinner>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+.header-container {
+	height: 60px;
+	background: #000;
+}
+
+.header-content {
+	display: flex;
+	height: 60px;
+	flex-direction: row;
+}
+
+.header-links {
+	height: 100%;
+	display: flex;
+}
+
+.link {
+	margin-left: 20px;
+	color: #D7D7D7;
+	cursor: pointer;
+	height: 60px;
+	padding: 5px;
+	line-height: 50px;
+	outline: none;
+}
+
+.link:hover {
+	background: #B73516;
+}

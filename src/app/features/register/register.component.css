@@ -1,0 +1,39 @@
+.register-container {
+	margin-top: 90px;
+}
+
+h2 {
+	text-align: center;
+}
+
+form {
+	width: 100%;
+}
+
+.form-container {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.submit-btn {
+	height: 40px;
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 20px;
+	background: #B73516;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	outline: 0;
+}
+
+.submit-btn:disabled {
+	background: #d7d7d7;
+}
+
+.spinner {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
