@@ -6,9 +6,9 @@ const npm = require('npm');
 const PORT = process.env.npm_config_port ? process.env.npm_config_port : 3001;
 const baseDirectory = process.env.npm_config_baseDirectory ? process.env.npm_config_baseDirectory : 'dist'
 
-app.use(express.static(path.join(__dirname, baseDirectory)));
+app.use(express.static(path.join(__dirname, `${baseDirectory}/devweek-example`)));
 app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname, `${baseDirectory}/index.html`));
+	res.sendFile(path.join(__dirname, `${baseDirectory}/devweek-example/index.html`));
 });
 const server = http.createServer(app);
 server.listen(PORT, () => {
